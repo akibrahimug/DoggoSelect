@@ -55,7 +55,7 @@ const generateBreed = () => {
 // ------------------------------------------
 select.addEventListener('change', generateBreed);
 card.addEventListener('click', generateBreed)
-generateBreed()
+
 
 // ------------------------------------------
 //  POST DATA
