@@ -169,7 +169,10 @@ mark {
    * Remove the border on images inside links in IE 10-.
    */
   img {
-    border-style: none; }
+    border-style: none; 
+    border-radius:20px !important;
+    max-width: 80%;
+  }
   
   /**
    * Hide the overflow in IE.

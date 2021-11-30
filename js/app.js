@@ -7,6 +7,7 @@ const form = document.querySelector('form');
 
 function fetchData(url) {
   return fetch(url)
+      .then(checkResponse)
       .then(res => res.json())
       .catch(error => console.log('Looks like there was a problem', error))
 }
@@ -21,7 +22,7 @@ fetchData('https://dog.ceo/api/breeds/image/random')
 // ------------------------------------------
 //  HELPER FUNCTIONS
 // ------------------------------------------
-const checkResponse = (response) => {
+function checkResponse(response){
     if (response.ok){
         return Promise.resolve(response);
     }else{
